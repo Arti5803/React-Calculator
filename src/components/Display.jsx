@@ -1,9 +1,9 @@
 import styles from './Display.module.css';
 
 
-const Display=()=>{
+const Display=({ value })=>{
   return(
-     <input type="text" className={styles.display} value="0" disabled />
+     <input type="text" className={styles.display} value={value} disabled />
 
   )
 }
